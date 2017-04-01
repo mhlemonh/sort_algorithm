@@ -31,11 +31,7 @@ def merge(a_list, b_list):
 if __name__ == '__main__':
     #np.random.seed(9487)
     range_min, range_max = 0, 100
-    l1=np.random.randint(range_min, range_max, size=9).tolist()
-    l2=np.random.randint(range_min, range_max, size=9).tolist()
-    l1.sort()
-    l2.sort()
-    print "Initial list1:", l1
-    print "Initial list2:", l2
-    sl = merge(l1, l2)
+    l=np.random.randint(range_min, range_max, size=9).tolist()
+    print "Initial list:", l
+    sl = merge_sort(l)
     print " Sorted list:", sl

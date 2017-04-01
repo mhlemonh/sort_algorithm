@@ -17,6 +17,7 @@ def count_sort(list_to_sort, min_value, max_value):
         sorted_list[count_list[list_value]-1] = list_value
         count_list[list_value] -= 1
     return sorted_list
+    
 if __name__ == '__main__':
     np.random.seed(9487)
     range_min, range_max = 0, 100
